@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  vertical-align: top;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 10px;
+}
+
+.smalltext {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  color: #111;
+  vertical-align: initial;
+}
+
+.card {
+  margin-top: 10px auto;
+  margin-bottom: 10px auto;
+  max-width: 1000px;
+  position: relative;
+  width: 90%;
+  border: 2px solid #000;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  z-index: 5;
+  position: relative;
+  margin-top: 0px;
+  padding: 0px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-animation: ani 5s;
+          animation: ani 5s;
+}
+
+.bottom {
+  padding: 10px 20px 0px 20px;
+  -webkit-animation: ani2 7s;
+          animation: ani2 7s;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.68;
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+@-webkit-keyframes ani {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+  }
+  50% {
+    -webkit-transform: scale(1.3) translateY(50px);
+            transform: scale(1.3) translateY(50px);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+  }
+}
+
+@keyframes ani {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+  }
+  50% {
+    -webkit-transform: scale(1.3) translateY(50px);
+            transform: scale(1.3) translateY(50px);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+  }
+}
+@-webkit-keyframes ani2 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ani2 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
